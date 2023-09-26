@@ -1,0 +1,166 @@
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+body{
+    background-image: url(imagenes/fondo.jpg);
+    background-size: 100% 100%;
+}
+
+header{
+    background-color: hsla(0, 0%, 29%, 0.747);
+    width: 100%;
+    height: 100px;
+
+}
+.container-header{
+
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+}
+.logo{
+    margin-top: 6px;
+}
+
+.usuario-texto{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    
+}
+
+.usuario-icon{
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.carrito{
+
+    width: 50px;
+    height: 50px;
+
+}
+
+header .container-header h2{
+
+    margin-top: 10px;
+}
+
+.buscador{
+    margin-right: 50px;
+    margin-top: 2px;
+    margin-right: 10px;
+    padding: 7px;
+    height: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+#searchterm{
+    border-radius: 20px;
+    height: 20px;
+    width: 300px;
+    background-color:whitesmoke;
+    padding:0.6em 0.8em;
+    display: block;
+    box-shadow:
+    1px 1px 0 hsl(0, 0%, 15%),
+    2px 2px 0 hsl(0, 1%, 27%),
+    3px 3px 0 hsl(0, 0%, 70%);
+}
+#search{
+    border-radius: 20px;
+    background-color: hsl(177, 90%, 32%);
+    height: 40px;
+    padding:0.6em 0.8em;
+    box-shadow:
+    1px 1px 0 hsl(0, 0%, 15%),
+    2px 2px 0 hsl(0, 1%, 27%),
+    3px 3px 0 hsl(0, 0%, 70%);
+}
+
+.section1{
+    display: block;
+    color: white;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.compras-seccion1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+.titulo-seccion1-blocke1 h2{
+
+    color: aqua;
+}
+
+.titulo-seccion1-blocke1{
+    margin-top: 15px;
+}
+
+.imgS1{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 8px;
+}
+
+.titulo-seccion1-blocke1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 90px;
+}
+
+.compras-seccion1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#boton-seccion1{
+    width: 20%;
+    height: 47px;
+    border-radius: 50px;
+    margin-top: 35px;
+    background-color: red;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#boton-seccion1:hover{
+    width: 20%;
+    height: 47px;
+    border-radius: 50px;
+    margin-top: 35px;
+    background-color: red;
+    color: white;
+}
+
+footer{
+
+    background-color: hsla(0, 0%, 29%, 0.747);
+    width: 100%;
+    height: 300px;
+}
+/*--------------------section2 y section3----------------------------*/
+.section2{
+    visibility: hidden; /*esto es para esconder un texto lorem*1000 que puse en el codigo html para poder que se separara del footer la seccion1*/
+    
+}
+.section3{
+    visibility: hidden;
+}
+

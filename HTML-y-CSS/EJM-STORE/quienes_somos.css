@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none ;
+
+}
+.sesion_s{
+    background-color: #f2c430;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F7F7F7;
+    margin: 30px;
+    
+}
+
+.container-all{
+    position: relative;
+    right: 0;
+    transition: all 300ms;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+
+    transition: all 300ms;
+
+}
+.move-content{
+    right: 180px;
+}
+
+.container-header{
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0px 20px;
+
+
+}
+
+header .logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo img{
+    width: 150px;
+}
+
+.container-nav{
+    position: relative;
+    height: 100%;
+}
+nav{
+    height: 100%;
+}
+
+nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    margin: 0px 20px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 14px;
+}
+
+.select{
+    background: #f2c430;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 20px;
+}
+.nav-mod{
+    height: 70px;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.564);
+    background: white;
+}
+
+.btn-menu{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background 300ms;
+    display: none;
+}
+
+.btn-menu:hover{
+    background: #f2c430;
+}
+@media screen and (max-width: 920px){
+    .container-vector{
+        width: 500px;
+    }
+
+
+}
+@media screen and (max-width: 760px) {
+
+    .container-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    
+    .btn-menu{
+        display: flex;
+    }
+    nav{
+        height: 100%;
+        background: gray;
+        position: fixed;
+        top: 0;
+        right: -180px;
+        padding: 0 40px;
+        transition: all 300ms;
+
+    }
+
+    .move-nav{
+        right: 0px;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li{
+        margin: 20px 0px;
+
+    }
+
+    .container-vector{
+        transform: scale(0);
+        animation: none;
+        
+    }
+
+}
+/* cover */
+
+.cover{
+    width: 100%;
+    padding-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 100px;
+}
+
+.container-cover{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px; 
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    /* background-image: url(../img/background-cover.png);
+    background-size: cover;
+    background-position:bottom ; */
+
+}
+.cover .container-info{
+    max-width:400px ;
+    margin-top: 40px;
+    z-index: 2;
+}
+
+.cover h1{
+    max-width: 400px;
+    font-size: 60px;
+    font-weight: 900;
+    color: #f2c430;
+}
+.cover h2{
+    font-size: 60px;
+    font-weight: 900;
+    color: black;
+    margin-top: -30px;
+}
+
+.cover p{
+    margin-top: 10px;
+    color: black;
+}
+
+.cover input[type="button"]{
+   padding: 10px 40px; 
+   margin-top: 40px;
+   font-size:18px ;
+   font-weight: 600;
+   border: none;
+   color: black;
+   background: #f2c430;
+   border-radius: 20px;
+   box-shadow: 1px 1px 30px -5px black;
+   cursor: pointer;
+   transition: box-sahdow 500ms;
+}
+
+.cover input[type="button"]:hover{
+    box-shadow: 1px 1px 30px -5px rgba(0, 0, 0, 0.386);
+}
+
+.container-vector{
+    position: relative;
+}
+.container-vector img{
+    position: absolute;
+    bottom: 10px;
+    right: 0%;
+    width:600px;
+    animation: move-vector 6s ease-in-out infinite;
+    transition: all 300ms;
+
+}
+
+@keyframes move-vector{
+    0%{
+        transform: translateY(10px);
+    }
+    25%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}

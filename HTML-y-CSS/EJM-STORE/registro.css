@@ -1,0 +1,144 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-ligth-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}      
+body{
+    margin: 0;
+    font-size: 'Quicksand', sans-serif;;
+}  
+.login{
+    width: 100%; /*Tamaño ancho*/
+    height: 100vh; /*Tamaño largo*/
+    display: grid; /*columnas y filas*/
+    place-items: center; /*Para centrar los items*/
+}
+.form-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto; /*Para poner las filas*/
+    width: 500px;
+    background-color: #f2c430;
+    border-radius: 26px;
+    height: 400px;
+    margin-bottom: 90px;
+    padding-top: 35px;
+    padding-left: 45px;
+}
+
+.logo{
+    width: 150px;
+    margin-bottom: 48px; /*Para poner espacion debajo*/
+    justify-self: center; /*Para cnetrar imagenes*/
+    display: none; 
+}
+.title{
+    font-size: var(--lg); /*Tamaño de la letra*/
+    margin-bottom: 12px;
+    text-align: center; /*Para alinear el texto*/
+}
+.subtitle{
+    color: var(--very-ligth-pink);
+    font-size: var(--md);
+    font-weight: 300; /*Poner bordos al rededor*/
+    margin-top: 0; /*Margen de encima*/
+    margin-bottom: 32px;
+    text-align: center;
+}
+.form{
+    grid-template-columns: auto 1fr;
+    display: grid;
+}
+.label{
+    font-size: var(--sm);
+    font-weight: bold; /*bold=negrita*/
+    margin-bottom: 15px;
+    text-align: center;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.input{
+    background-color: var(--text-input-field); /*Color del fondo*/
+    border: none;
+    height: 25px;
+    font-size: var(--md);
+    padding: 6px; /*Para hacer un borde pequeño*/
+    margin-bottom: 12px;
+    width: 55%;
+    align-self: center;
+}
+.select{
+    width: 59%;
+    height: 40px;
+    background-color: #F7F7F7;
+    border: 1px solid #f2c430;
+}
+.select:hover{
+    border: 1px solid #40B335;
+}
+.button{
+    margin-left: 133px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+.primary-button{
+    background-color: #40B335;
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer; /*Para cambiar a la manito*/
+    font-size: var(--md);
+    font-weight: bold;
+    height: 40px;
+    align-self: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.crear{
+    text-decoration: none;
+    color: #000000;
+}
+.crear:hover{
+    color: #F7F7F7;
+}
+.olvido{
+    text-decoration: none;
+    color: #000000;
+}
+.olvido:hover{
+    color: #F7F7F7;
+}
+.sesion{
+    background-color: #f2c430;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F7F7F7;
+
+}
+
+.logo-inicio{
+    display: flex;
+    justify-content: center;
+}
+.jesusM{
+    float: right;
+    padding: 5px;
+    border-radius: 80px;
+}
+footer{
+    background:#000000;
+    padding: 100px 0 30px 0;
+    border: 3px solid #f2c430;
+    overflow: hidden;
+}
